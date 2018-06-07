@@ -19,11 +19,11 @@ void mSystem::AssignEntities(mEntity & entityManager)
 	vector<oEntity> entities = entityManager.Entites();
 
 
-	for (int i; i < systemList.size; i++)
+	for (auto & system : systemList)
 	{
-		for (int j; j < entities.size; i++)
+		for (auto & entity : entities)
 		{
-			systemList[i]->AssignEntity(entities[j]);
+			system->AssignEntity(entity);
 		}
 	}
 }
@@ -35,9 +35,9 @@ void mSystem::AssignNewEntity(oEntity & entity)
 	systemList.insert(systemList.end(), renderSystems.begin(), renderSystems.end());
 	systemList.insert(systemList.end(), updateSystems.begin(), updateSystems.end());
 
-	for (int i; i < systemList.size; i++)
+	for (auto & system : systemList)
 	{
-		systemList[i]->AssignEntity(entity);
+		system->AssignEntity(entity);
 	}
 }
 
@@ -48,25 +48,25 @@ void mSystem::DestroyEntity(oEntity & entity)
 	systemList.insert(systemList.end(), renderSystems.begin(), renderSystems.end());
 	systemList.insert(systemList.end(), updateSystems.begin(), updateSystems.end());
 
-	for (int i; i < systemList.size; i++)
+	for (auto & system : systemList)
 	{
-		systemList[i]->DestroyEntity(entity);
+		system->DestroyEntity(entity);
 	}
 }
 
 void mSystem::RenderSystems()
 {
-	for (int i = 0; i < renderSystems.size; i++)
+	for (auto & system : renderSystems)
 	{
-		renderSystems[i]->OnAction();
+		system->OnAction();
 	}
 }
 
 void mSystem::UpdateSystems()
 {
-	for (int i = 0; i < updateSystems.size; i++)
+	for (auto & system : updateSystems)
 	{
-		updateSystems[i]->OnAction();
+		system->OnAction();
 	}
 }
 
