@@ -40,8 +40,11 @@
     <ClCompile Include="Source Files\Game Engine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mEntity.cpp">
+    <ClCompile Include="Source Files\Managers\mEntity.cpp">
       <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source Files\Objects\oGeometry.cpp">
+      <Filter>Source Files\Objects</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -66,9 +69,6 @@
     <ClInclude Include="Header Files\Managers\mInput.h">
       <Filter>Header Files\Managers</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\Managers\mResource.h">
-      <Filter>Header Files\Managers</Filter>
-    </ClInclude>
     <ClInclude Include="Header Files\Managers\mScene.h">
       <Filter>Header Files\Managers</Filter>
     </ClInclude>
@@ -87,14 +87,20 @@
     <ClInclude Include="Header Files\Systems\sRender.h">
       <Filter>Header Files\Systems</Filter>
     </ClInclude>
-    <ClInclude Include="Header Files\stdafx.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Header Files\targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="mEntity.h">
       <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Header Files\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header Files\Managers\mResource.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Header Files\Objects\oGeometry.h">
+      <Filter>Header Files\Objects</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

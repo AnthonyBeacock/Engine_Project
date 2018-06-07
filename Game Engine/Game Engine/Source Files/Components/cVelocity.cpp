@@ -5,6 +5,10 @@ cVelocity::cVelocity(float velocity, float maxVelocity, float acceleration, bool
 {
 }
 
+cVelocity::~cVelocity()
+{
+}
+
 float cVelocity::GetVelocity()
 {
 	return velocity;
