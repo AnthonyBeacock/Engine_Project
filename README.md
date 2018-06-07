@@ -5,9 +5,11 @@
 ###### Anthony Beacock:
 - Audio System
 - Audio Buffer Object
-- Resource Manager (High Priority)
-- Input Manager (High Priority)
-- Render System (Basic Rendering High Priority)
+- Resource Manager (High Priority) - Jake has started
+- Scene Object (High Priority) - Started
+- Input Manager (High Priority) - Started
+- Scene Manager (High Priority) - Started
+- Render System (Basic Rendering High Priority) - Started
 
 ###### Dean Barnard:
 - Physics System
@@ -24,8 +26,6 @@
 
 ###### Reece Giles:
 - AI System
-- Scene Manager (High Priority)
-- Scene Object (High Priority)
 - GUI Object
 
 ## Libraries:
@@ -46,7 +46,7 @@ GLM provides magical maths things like Vector maths etc.
 
 To make OpenAL work you may have to modify your filepaths in project properties to point towards the location of the OpenAL folder:
 
-1. Right-Click on the Project Solution and select Properties.
+1. Right-Click on the Project and select Properties.
 
 2. Go to "C/C++ -> General -> Additional Include Directories" and add in correct filepath e.g.
 	(...\Engine-Project\OpenAL\openal-soft-1.18.2-bin\openal-soft-1.18.2-bin\include\AL)
@@ -60,6 +60,15 @@ To make OpenAL work you may have to modify your filepaths in project properties 
 #include "alc.h" 
 #include "alut.h"
 
+###### OpenGL
+
+There is a possibility that you will need to link the OpenGL32 library to the Project.
+
+1. Right-Click on the Project and select Properties.
+
+2. Go to to "Linker -> Input -> Additional Dependencies" and add in OpenGL32.lib; directly before %(AdditionalDependencies)
+
+
 ## Engine Design:
 
 Download NClass to view the Engine Design.ncp, already contains a framework of the core stuff we'll need, feel free to add stuff/flesh out the classes.
@@ -69,5 +78,5 @@ http://nclass.sourceforge.net/
 ## Coding Conventions
 
 - Use Include Guards in all header files (https://www.youtube.com/watch?v=RU5JUHAiR18&app=desktop)
-- Name files appropriately (eg. Components = cHealth, Managers = mSystem, Systems = mRender, Objects = oEntity)
+- Name files appropriately (eg. Components = cHealth, Managers = mSystem, Systems = sRender, Objects = oEntity)
 - Pass by value if small type like int, pass by reference if larger object, pass by pointer if you absolutely need to (eg. parameter can be null)
