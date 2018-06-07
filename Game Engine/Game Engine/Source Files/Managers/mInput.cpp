@@ -47,7 +47,7 @@ void mInput::MouseButtonCallback(GLFWwindow * window, int button, int action, in
 	if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_PRESS)
 	{
 		cout << "Left Mouse Button Clicked" << endl;
-		//pressedMouseButton = MOUSE_BUTTONS::MOUSE_BUTTON_LEFT;
+		pressedMouseButton = MOUSE_BUTTONS::MOUSE_BUTTON_LEFT;
 		//buttonState = BUTTON_STATE::DOWN;
 	}
 	if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_RELEASE)
