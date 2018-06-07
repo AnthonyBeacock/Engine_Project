@@ -13,6 +13,7 @@ int main(void)
 	mScene sceneManager;
 	string name = "name";
 	oEntity entity(name);
+	mInput inputManager(&sceneManager);
 	mEntity entityManager;
 
 	cTransform transform(vec3(0, 0, 0), vec3(0, 0, 0), vec3(0, 0, 0));
@@ -26,10 +27,12 @@ int main(void)
 	sceneManager.InitialiseGLFW();
 	sceneManager.OpenWindow();
 	sceneManager.SetupKeyPress();
+
+	//inputManager.CursorVisible(sceneManager.window, true); // would be called from the actual game?
+
 	sceneManager.Render();
 	sceneManager.Update();
 
-	
 
 	return 0;
 }
