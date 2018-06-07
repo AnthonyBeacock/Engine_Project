@@ -1,0 +1,275 @@
+<Project>
+  <Name>Engine Design</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Components</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>cVelocity</Name>
+        <Access>Public</Access>
+        <Location left="213" top="119" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private float velocity</Member>
+        <Member type="Field">private float maxVelocity</Member>
+        <Member type="Field">private bool gravity</Member>
+        <Member type="Field">private float acceleration</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>cTransform</Name>
+        <Access>Public</Access>
+        <Location left="415" top="119" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Matrix4 transform</Member>
+        <Member type="Field">private Vector3 translation</Member>
+        <Member type="Field">private Vector3 rotation</Member>
+        <Member type="Field">private Vector3 scale</Member>
+        <Member type="Field">private Vector3 forward</Member>
+        <Member type="Field">private Vector3 right</Member>
+        <Member type="Field">private Vector3 left</Member>
+        <Member type="Field">private bool transformSet</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>cShader</Name>
+        <Access>Public</Access>
+        <Location left="613" top="121" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>cGeometry</Name>
+        <Access>Public</Access>
+        <Location left="810" top="123" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>cTexture</Name>
+        <Access>Public</Access>
+        <Location left="1012" top="121" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>cSphereCollider</Name>
+        <Access>Public</Access>
+        <Location left="1214" top="121" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>cBoxCollider</Name>
+        <Access>Public</Access>
+        <Location left="1414" top="121" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>cHealth</Name>
+        <Access>Public</Access>
+        <Location left="212" top="382" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>cAudio</Name>
+        <Access>Public</Access>
+        <Location left="417" top="382" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>cAI</Name>
+        <Access>Public</Access>
+        <Location left="615" top="383" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>IComponent</Name>
+        <Access>Public</Access>
+        <Location left="813" top="379" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships />
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Systems</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>sPhysics</Name>
+        <Access>Public</Access>
+        <Location left="140" top="94" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>sRender</Name>
+        <Access>Public</Access>
+        <Location left="344" top="95" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>sCollisions</Name>
+        <Access>Public</Access>
+        <Location left="544" top="97" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>sAudio</Name>
+        <Access>Public</Access>
+        <Location left="748" top="100" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>sAI</Name>
+        <Access>Public</Access>
+        <Location left="949" top="103" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ISystem</Name>
+        <Access>Public</Access>
+        <Location left="1153" top="103" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships />
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Managers</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>mEntity</Name>
+        <Access>Public</Access>
+        <Location left="187" top="107" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>mSystem</Name>
+        <Access>Public</Access>
+        <Location left="398" top="107" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>mInput</Name>
+        <Access>Public</Access>
+        <Location left="604" top="107" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>mScene</Name>
+        <Access>Public</Access>
+        <Location left="813" top="109" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>mResource</Name>
+        <Access>Public</Access>
+        <Location left="1018" top="108" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships />
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Objects</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>oCamera</Name>
+        <Access>Public</Access>
+        <Location left="189" top="92" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>oAudioBuffer</Name>
+        <Access>Public</Access>
+        <Location left="396" top="95" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>oEntity</Name>
+        <Access>Public</Access>
+        <Location left="599" top="99" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>oGeometry</Name>
+        <Access>Public</Access>
+        <Location left="801" top="102" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>oScene</Name>
+        <Access>Public</Access>
+        <Location left="1003" top="102" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>IScene</Name>
+        <Access>Public</Access>
+        <Location left="1202" top="101" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>oGUI</Name>
+        <Access>Public</Access>
+        <Location left="1404" top="104" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships />
+  </ProjectItem>
+</Project>
