@@ -20,9 +20,9 @@ public:
 	oEntity();
 	~oEntity();
 	oEntity(string &nameIn);
-	void AddComponent(IComponent* componentIn);
+	void AddComponent(IComponent* component);
 	string& GetName();
-	void SetName(string &nameIn);
+	void SetName(string &name);
 	IComponent::ComponentMasks Mask();
 	vector<IComponent*>& Components();
 

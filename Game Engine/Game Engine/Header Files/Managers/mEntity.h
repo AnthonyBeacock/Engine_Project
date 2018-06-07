@@ -1,5 +1,5 @@
-#ifndef ENTITYMANAGER
-#define ENTITYMANAGER
+#ifndef ENTITY_M
+#define ENTITY_M
 
 #include <string>
 #include <vector>
@@ -23,4 +23,4 @@ public:;
 
 };
 
-#endif // !ENTITYMANAGER
+#endif // !ENTITY_M

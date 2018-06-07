@@ -1,6 +1,6 @@
 #ifndef RESOURCEMANAGER
 #define RESOURCEMANAGER
-#include <map>;
+#include <map>
 
 using namespace std;
 
