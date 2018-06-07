@@ -37,7 +37,7 @@ void mEntity::AddEntity(oEntity & entity)
 	}
 }
 
-void mEntity::RemoveEntity(oEntity * entity)
+void mEntity::RemoveEntity(oEntity & entity)
 {
 }
 

@@ -6,17 +6,22 @@
 #include "GLFW\glfw3.h"
 #include "glm\glm.hpp"
 #include "oEntity.h"
+#include "mEntity.h"
 
 int main(void)
 {
 	mScene sceneManager;
 	string name = "name";
 	oEntity entity(name);
+	mEntity entityManager;
 
 	cTransform transform(vec3(0, 0, 0), vec3(0, 0, 0), vec3(0, 0, 0));
 	cTransform *transformP = &transform;
 
 	entity.AddComponent(transformP);
+
+	entityManager.AddEntity(entity);
+	entityManager.AddEntity(entity);
 
 	sceneManager.InitialiseGLFW();
 	sceneManager.OpenWindow();
