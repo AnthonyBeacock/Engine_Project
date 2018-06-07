@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "mScene.h"
+#include "mInput.h"
 
 
 mScene::mScene()
@@ -24,7 +25,6 @@ int mScene::InitialiseGLFW()
 	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // To make MacOS happy; should not be needed
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
 }
@@ -40,6 +40,11 @@ int mScene::OpenWindow()
 		return -1;
 	}
 	glfwMakeContextCurrent(window);
+
+	//glfwSetCharCallback(window, mInput::CharacterCallback); // allows keyboard keys to be tracked (produced ASCII code)
+	glfwSetCharModsCallback(window, mInput::CharacterModCallback); // allows keyboard keys to be tracked (produced ASCII code)
+	glfwSetCursorPosCallback(window, mInput::CursorPositionCallback); // allows cursor position to be tracked
+	glfwSetMouseButtonCallback(window, mInput::MouseButtonCallback);
 }
 
 void mScene::SetupKeyPress()
