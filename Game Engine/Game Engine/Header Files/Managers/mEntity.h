@@ -1,5 +1,5 @@
-#ifndef ENTITY_M
-#define ENTITY_M
+#ifndef ENTITYMANAGER
+#define ENTITYMANAGER
 
 #include <string>
 #include <vector>
@@ -18,9 +18,9 @@ public:;
 	~mEntity();
 	oEntity FindEntity(string &name);
 	void AddEntity(oEntity &entity);
-	void RemoveEntity(oEntity *entity);
+	void RemoveEntity(oEntity &entity);
 	vector<oEntity>& Entites();
 
 };
 
-#endif // !ENTITY_M
+#endif // ENTITYMANAGER

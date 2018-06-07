@@ -163,6 +163,7 @@
     <ClInclude Include="Header Files\Components\cTransform.h" />
     <ClInclude Include="Header Files\Components\cVelocity.h" />
     <ClInclude Include="Header Files\Components\IComponent.h" />
+    <ClInclude Include="Header Files\Managers\mEntity.h" />
     <ClInclude Include="Header Files\Managers\mInput.h" />
     <ClInclude Include="Header Files\Managers\mResource.h" />
     <ClInclude Include="Header Files\Managers\mScene.h" />
@@ -174,7 +175,6 @@
     <ClInclude Include="Header Files\Systems\ISystem.h" />
     <ClInclude Include="Header Files\Systems\sRender.h" />
     <ClInclude Include="Header Files\targetver.h" />
-    <ClInclude Include="mEntity.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source Files\Components\cGeometry.cpp" />
