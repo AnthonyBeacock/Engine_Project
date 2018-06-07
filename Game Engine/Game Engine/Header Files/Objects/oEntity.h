@@ -26,6 +26,10 @@ public:
 	IComponent::ComponentMasks Mask();
 	vector<IComponent*>& Components();
 
+	bool oEntity::operator==(const oEntity& a)
+	{
+		return name == a.name;
+	}
 };
 
 #endif // !ENTITY

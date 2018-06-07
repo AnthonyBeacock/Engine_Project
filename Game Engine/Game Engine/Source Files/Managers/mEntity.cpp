@@ -9,9 +9,15 @@ mEntity::~mEntity()
 {
 }
 
-oEntity mEntity::FindEntity(string & name)
+oEntity& mEntity::FindEntity(string & name)
 {
-	return oEntity();
+	for (auto & entity : entities)
+	{
+		if (entity.GetName() == name)
+		{
+			return entity;
+		}
+	}
 }
 
 void mEntity::AddEntity(oEntity & entity)
@@ -39,6 +45,7 @@ void mEntity::AddEntity(oEntity & entity)
 
 void mEntity::RemoveEntity(oEntity & entity)
 {
+	entities.erase(remove(entities.begin(), entities.end(), entity), entities.end());
 }
 
 vector<oEntity>& mEntity::Entites()
