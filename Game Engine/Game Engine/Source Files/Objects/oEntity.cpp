@@ -25,9 +25,9 @@ string& oEntity::GetName()
 	return name;
 }
 
-void oEntity::SetName(string &name)
+void oEntity::SetName(string &nameIn)
 {
-	name = name;
+	name = nameIn;
 }
 
 IComponent::ComponentMasks oEntity::Mask()
@@ -38,5 +38,27 @@ IComponent::ComponentMasks oEntity::Mask()
 vector<IComponent*>& oEntity::Components()
 {
 	return componentList;
+}
+
+cTransform* oEntity::GetTransform()
+{
+	for (auto & component : componentList)
+	{
+		if (component->ComponentMask() == IComponent::COMPONENT_TRANSFORM)
+		{
+			return static_cast<cTransform*>(component);
+		}
+	}
+}
+
+cVelocity* oEntity::GetVelocity()
+{
+	for (auto & component : componentList)
+	{
+		if (component->ComponentMask() == IComponent::COMPONENT_VELOCITY)
+		{
+			return static_cast<cVelocity*>(component);
+		}
+	}
 }
 

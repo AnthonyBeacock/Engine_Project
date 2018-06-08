@@ -46,6 +46,7 @@ void mEntity::AddEntity(oEntity & entity)
 void mEntity::RemoveEntity(oEntity & entity)
 {
 	entities.erase(remove(entities.begin(), entities.end(), entity), entities.end());
+	entityNames.erase(remove(entityNames.begin(), entityNames.end(), entity.GetName()), entityNames.end());
 }
 
 vector<oEntity>& mEntity::Entites()

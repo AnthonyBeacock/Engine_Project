@@ -3,7 +3,7 @@
 
 #include "IComponent.h"
 
-class cVelocity : IComponent
+class cVelocity : public IComponent
 {
 private:
 	float velocity;

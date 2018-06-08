@@ -5,6 +5,7 @@
 #include <string>
 #include <vector>
 #include "cTransform.h"
+#include "cVelocity.h"
 #include <algorithm>
 
 using namespace std;
@@ -25,6 +26,8 @@ public:
 	void SetName(string &name);
 	IComponent::ComponentMasks Mask();
 	vector<IComponent*>& Components();
+	cTransform* GetTransform();
+	cVelocity* GetVelocity();
 
 	bool oEntity::operator==(const oEntity& a)
 	{
