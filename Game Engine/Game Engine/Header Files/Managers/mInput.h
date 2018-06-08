@@ -17,14 +17,14 @@ public:
 
 	mScene* sceneManager;
 
-	void CursorPositionCallback(GLFWwindow * window, double xPosition, double yPosition);
-	void CursorVisible(GLFWwindow * window, bool isVisible);
-	void MouseButtonCallback(GLFWwindow * window, int button, int action, int mods);
+	static void CursorPositionCallback(GLFWwindow * window, double xPosition, double yPosition);
+	static void CursorVisible(GLFWwindow * window, bool isVisible);
+	static void MouseButtonCallback(GLFWwindow * window, int button, int action, int mods);
 
-	void CharacterCallback(GLFWwindow * window, unsigned int keyCode);
-	void CharacterModCallback(GLFWwindow * window, unsigned int keyCode, int modifierKeyCode);
+	static void CharacterCallback(GLFWwindow * window, unsigned int keyCode);
+	static void CharacterModCallback(GLFWwindow * window, unsigned int keyCode, int modifierKeyCode);
 
-	enum MOUSE_BUTTONS
+    enum MOUSE_BUTTONS
 	{
 		MOUSE_BUTTON_LEFT,
 		MOUSE_BUTTON_RIGHT,
@@ -32,7 +32,7 @@ public:
 		NO_MOUSE_BUTTON,
 	};
 
-	MOUSE_BUTTONS pressedMouseButton;
+	static MOUSE_BUTTONS pressedMouseButton;
 
 	/*enum KEYBOARD_BUTTONS
 	{

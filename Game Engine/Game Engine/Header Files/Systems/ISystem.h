@@ -9,6 +9,5 @@ public:
 	virtual void DestroyEntity(oEntity& entity) = 0;
 
 private:
-	string name;
 };
 

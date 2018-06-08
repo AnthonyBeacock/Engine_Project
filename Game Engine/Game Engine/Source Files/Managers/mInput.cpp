@@ -5,7 +5,7 @@
 #include "glm\glm.hpp"
 #include <iostream>
 
-
+mInput::MOUSE_BUTTONS mInput::pressedMouseButton;
 
 mInput::mInput(mScene * inSceneManager)
 {
