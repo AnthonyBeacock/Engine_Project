@@ -16,7 +16,7 @@ private:
 public:;
 	mEntity();
 	~mEntity();
-	oEntity FindEntity(string &name);
+	oEntity& FindEntity(string &name);
 	void AddEntity(oEntity &entity);
 	void RemoveEntity(oEntity &entity);
 	vector<oEntity>& Entites();
