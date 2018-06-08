@@ -88,7 +88,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>E:\Github\Engine_Project\OpenAL\openal-soft-1.18.2-bin\openal-soft-1.18.2-bin\include\AL;E:\Github\Engine_Project\Game Engine\Game Engine\Header Files;E:\Github\Engine_Project\Game Engine\Game Engine\Header Files\Systems;E:\Github\Engine_Project\Game Engine\Game Engine\Header Files\Objects;E:\Github\Engine_Project\Game Engine\Game Engine\Header Files\Managers;E:\Github\Engine_Project\Game Engine\Game Engine\Header Files\Components;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>"E:\Github\Engine_Project\OpenAL\openal-soft-1.18.2-bin\openal-soft-1.18.2-bin\include\AL";"E:\Github\Engine_Project\Game Engine\Game Engine\Header Files";"E:\Github\Engine_Project\Game Engine\Game Engine\Header Files\Systems";"E:\Github\Engine_Project\Game Engine\Game Engine\Header Files\Objects";"E:\Github\Engine_Project\Game Engine\Game Engine\Header Files\Managers";"E:\Github\Engine_Project\Game Engine\Game Engine\Header Files\Components";</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -122,7 +122,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>E:\Github\Engine_Project\OpenAL\openal-soft-1.18.2-bin\openal-soft-1.18.2-bin\include\AL;E:\Github\Engine_Project\Game Engine\Game Engine\Header Files;E:\Github\Engine_Project\Game Engine\Game Engine\Header Files\Systems;E:\Github\Engine_Project\Game Engine\Game Engine\Header Files\Objects;E:\Github\Engine_Project\Game Engine\Game Engine\Header Files\Managers;E:\Github\Engine_Project\Game Engine\Game Engine\Header Files\Components;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>"E:\Github\Engine_Project\OpenAL\openal-soft-1.18.2-bin\openal-soft-1.18.2-bin\include\AL";"E:\Github\Engine_Project\Game Engine\Game Engine\Header Files";"E:\Github\Engine_Project\Game Engine\Game Engine\Header Files\Systems";"E:\Github\Engine_Project\Game Engine\Game Engine\Header Files\Objects";"E:\Github\Engine_Project\Game Engine\Game Engine\Header Files\Managers";"E:\Github\Engine_Project\Game Engine\Game Engine\Header Files\Components";</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
