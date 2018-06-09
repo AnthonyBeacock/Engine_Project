@@ -3,9 +3,6 @@
 #include "GLFW\glfw3.h"
 #include "glm\glm.hpp"
 
-#define HEIGHT 768
-#define WIDTH 1024
-
 class mScene : public IScene
 {
 public:
@@ -14,8 +11,8 @@ public:
 
 	GLFWwindow * window;
 
-	int InitialiseGLFW(bool isResizable);
-	int OpenWindow(const char* titleString);
+	int InitialiseGLFW();
+	int OpenWindow(const char* titleString, int widith, int height, bool isResizable);
 	void SetupKeyPress();
 
 	void Render() override;
