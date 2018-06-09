@@ -63,8 +63,8 @@ int main(void)
 	mScene sceneManager;
 	mInput inputManager(&sceneManager);
 
-	sceneManager.InitialiseGLFW(false);
-	sceneManager.OpenWindow("Game Engine");
+	sceneManager.InitialiseGLFW();
+	sceneManager.OpenWindow("Game Engine", 1024, 768, false);
 	sceneManager.SetupKeyPress();
 
 	//inputManager.CursorVisible(sceneManager.window, true); // would be called from the actual game?
