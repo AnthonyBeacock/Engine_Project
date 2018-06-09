@@ -13,10 +13,8 @@ public:
 
 	int InitialiseGLFW();
 	int OpenWindow(const char* titleString, int widith, int height, bool isResizable);
-	void SetupKeyPress();
 
 	void Render() override;
 	void Update() override;
-
 };
 
