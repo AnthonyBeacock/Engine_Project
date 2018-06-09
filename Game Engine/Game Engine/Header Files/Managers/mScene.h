@@ -14,8 +14,8 @@ public:
 
 	GLFWwindow * window;
 
-	int InitialiseGLFW();
-	int OpenWindow();
+	int InitialiseGLFW(bool isResizable);
+	int OpenWindow(const char* titleString);
 	void SetupKeyPress();
 
 	void Render() override;
