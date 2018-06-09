@@ -9,7 +9,7 @@ using namespace std;
 class mInput
 {
 private:
-	mScene* sceneManager;
+	mScene * sceneManager;
 	glm::vec2 mousePosition;
 public:
 	mInput(mScene* inSceneManager);
@@ -20,9 +20,12 @@ public:
 	static void CharacterCallback(GLFWwindow * window, unsigned int keyCode);
 	static void CharacterModCallback(GLFWwindow * window, unsigned int keyCode, int modifierKeyCode);
 
+	static void KeyCallback(GLFWwindow * window, int button, int scanCode, int action, int mods);
+
 	static void CursorVisible(GLFWwindow * window, bool isVisible);
 	static void CenterCursor(GLFWwindow * window, bool isCentered);
-	
+	static void ScrollWheelCallback(GLFWwindow * window, double xOffset, double yOffset);
+
 	enum MOUSE_BUTTONS
 	{
 		MOUSE_BUTTON_LEFT, MOUSE_BUTTON_RIGHT, MOUSE_BUTTON_MIDDLE, NO_MOUSE_BUTTON,
@@ -38,17 +41,26 @@ public:
 		// NUMBERS
 		KEY_0, KEY_1, KEY_2, KEY_3, KEY_4, KEY_5, KEY_6, KEY_7, KEY_8, KEY_9,
 
+		// ARROWS
+		KEY_DOWN_ARROW, KEY_LEFT_ARROW, KEY_RIGHT_ARROW, KEY_UP_ARROW,
+
 		// OTHER
-		KEY_SHIFT, KEY_SPACE,
+		KEY_SHIFT, KEY_SPACE, KEY_BACKSPACE, KEY_CTRL, KEY_ALT, KEY_ENTER,
 
 		No_Keyboard_Button
 	};
 	static KEYBOARD_BUTTONS pressedKeyboardButton;
 
-	enum BUTTON_STATE
+	enum MOUSE_BUTTON_STATE
 	{
-		DOWN, UP,
+		MOUSE_DOWN, MOUSE_UP,
 	};
-	static BUTTON_STATE buttonState;
+	static MOUSE_BUTTON_STATE mouseButtonState;
+
+	enum KEYBOARD_BUTTON_STATE
+	{
+		KEY_DOWN, KEY_UP,
+	};
+	static KEYBOARD_BUTTON_STATE keyboardButtonState;
 };
 
