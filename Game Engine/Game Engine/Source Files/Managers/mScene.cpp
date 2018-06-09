@@ -51,11 +51,12 @@ int mScene::OpenWindow(const char* titleString, int width, int height, bool isRe
 	// Ensure we can capture the escape key being pressed below
 	glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
 
-	//glfwSetKeyCallback(window, mInput::keyCallback);
+	glfwSetKeyCallback(window, mInput::KeyCallback);
 	//glfwSetCharCallback(window, mInput::CharacterCallback); // allows keyboard keys to be tracked (produced ASCII code)
 	glfwSetCharModsCallback(window, mInput::CharacterModCallback); // allows keyboard keys to be tracked (produced ASCII code)
 	glfwSetCursorPosCallback(window, mInput::CursorPositionCallback); // allows cursor position to be tracked
 	glfwSetMouseButtonCallback(window, mInput::MouseButtonCallback); // allows mouse buttons to be tracked
+	glfwSetScrollCallback(window, mInput::ScrollWheelCallback);
 }
 
 void mScene::Render()
