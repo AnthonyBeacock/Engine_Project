@@ -20,7 +20,6 @@ int mScene::InitialiseGLFW()
 		getchar();
 		return -1;
 	}
-
 }
 
 int mScene::OpenWindow(const char* titleString, int width, int height, bool isResizable)
@@ -49,18 +48,14 @@ int mScene::OpenWindow(const char* titleString, int width, int height, bool isRe
 		return -1;
 	}
 	glfwMakeContextCurrent(window);
+	// Ensure we can capture the escape key being pressed below
+	glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
 
 	//glfwSetKeyCallback(window, mInput::keyCallback);
 	//glfwSetCharCallback(window, mInput::CharacterCallback); // allows keyboard keys to be tracked (produced ASCII code)
 	glfwSetCharModsCallback(window, mInput::CharacterModCallback); // allows keyboard keys to be tracked (produced ASCII code)
 	glfwSetCursorPosCallback(window, mInput::CursorPositionCallback); // allows cursor position to be tracked
 	glfwSetMouseButtonCallback(window, mInput::MouseButtonCallback); // allows mouse buttons to be tracked
-}
-
-void mScene::SetupKeyPress()
-{
-	// Ensure we can capture the escape key being pressed below
-	glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
 }
 
 void mScene::Render()
