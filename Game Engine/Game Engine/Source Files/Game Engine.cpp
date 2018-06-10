@@ -12,7 +12,6 @@
 
 int main(void)
 {
-
 	//Entity and Entity Manager testing
 
 	string name = "name";
@@ -58,21 +57,19 @@ int main(void)
 	systemManager.AddRenderSystem(renderSystemP);
 	systemManager.AddUpdateSystem(renderSystemP);
 
-
 	//Initialisation of GL window and input handling
-
 	mScene sceneManager;
 	mInput inputManager(&sceneManager);
 
 	sceneManager.InitialiseGLFW();
-	sceneManager.OpenWindow();
-	sceneManager.SetupKeyPress();
+	sceneManager.OpenWindow("Game Engine", 1024, 768, false);
 
 	//inputManager.CursorVisible(sceneManager.window, true); // would be called from the actual game?
+	//inputManager.CenterCursor(sceneManager.window, true); // would be called from the actual game - needs to be called in update I think.
 
+	// Sets up the Update and Render methods
 	sceneManager.Render();
 	sceneManager.Update();
-
 
 	return 0;
 }
