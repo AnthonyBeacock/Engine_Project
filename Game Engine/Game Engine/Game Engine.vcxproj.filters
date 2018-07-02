@@ -46,6 +46,9 @@
     <ClCompile Include="Source Files\Objects\oGeometry.cpp">
       <Filter>Source Files\Objects</Filter>
     </ClCompile>
+    <ClCompile Include="Source Files\Managers\mSystem.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header Files\Components\cGeometry.h">
@@ -100,6 +103,9 @@
       <Filter>Header Files\Objects</Filter>
     </ClInclude>
     <ClInclude Include="Header Files\Managers\mEntity.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Header Files\Managers\mSystem.h">
       <Filter>Header Files\Managers</Filter>
     </ClInclude>
   </ItemGroup>
