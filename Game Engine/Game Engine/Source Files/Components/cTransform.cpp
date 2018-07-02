@@ -9,6 +9,10 @@ cTransform::cTransform(vec3 & t, vec3 & r, vec3 & s)
 	transformSet = false;
 }
 
+cTransform::~cTransform()
+{
+}
+
 void cTransform::SetTransform()
 {
 	transformSet = true;

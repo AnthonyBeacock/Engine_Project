@@ -1,6 +1,7 @@
 #ifndef RESOURCEMANAGER
 #define RESOURCEMANAGER
 #include <map>
+#include "oGeometry.h"
 
 using namespace std;
 
@@ -12,8 +13,8 @@ public:
 
 	static int LoadTexture();
 	static void LoadShader();
+	static oGeometry LoadGeometry();
 	//static AudioBuffer LoadWAV();
-	//static Geometry LoadGeometry();
 	
 private:
 	map<string, int> textureDict;

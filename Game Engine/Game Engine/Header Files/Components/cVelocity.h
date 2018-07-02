@@ -14,6 +14,7 @@ private:
 
 public:
 	cVelocity(float velocity, float maxVelocity, float acceleration, bool gravity);
+	~cVelocity();
 	float GetVelocity();
 	void SetVelocity(float velocityIn);
 	float GetMaxVelocity();
@@ -22,7 +23,7 @@ public:
 	void SetAcceleration(float accelerationIn);
 	bool GetGravity();
 	void SetGravity(bool gravityIn);
-	ComponentMasks ComponentMask();
+	ComponentMasks ComponentMask() override;
 };
 
 #endif

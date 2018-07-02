@@ -22,6 +22,7 @@ private:
 
 public:
 	cTransform(vec3 &t, vec3 &r, vec3 &s);
+	~cTransform();
 	void SetTransform();
 	vec3& GetTranslation();
 	void SetTranslation(vec3 &translationIn);
@@ -37,7 +38,7 @@ public:
 	void SetRight(vec3 &rightIn);
 	vec3& GetUp();
 	void SetUp(vec3 &upIn);
-	ComponentMasks ComponentMask();
+	ComponentMasks ComponentMask() override;
 };
 
 #endif
