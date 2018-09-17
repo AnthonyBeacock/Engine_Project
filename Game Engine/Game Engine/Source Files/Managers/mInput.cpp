@@ -860,5 +860,615 @@ void mInput::KeyCallback(GLFWwindow * window, int key, int scanCode, int action,
 		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
 		cout << "Key 'ENTER' Released" << endl;
 	}
-
+	if ((key == 32) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_SPACE;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'SPACE' Pressed" << endl;
+	}
+	if ((key == 32) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_SPACE;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'SPACE' Released" << endl;
+	}
+	if ((key == 39) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_APOSTROPHE;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'APOSTROPHE' Pressed" << endl;
+	}
+	if ((key == 39) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_APOSTROPHE;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'APOSTROPHE' Released" << endl;
+	}
+	if ((key == 44) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_COMMA;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'COMMA' Pressed" << endl;
+	}
+	if ((key == 44) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_COMMA;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'COMMA' Released" << endl;
+	}
+	if ((key == 45) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_MINUS;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'MINUS' Pressed" << endl;
+	}
+	if ((key == 45) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_MINUS;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'MINUS' Released" << endl;
+	}
+	if ((key == 46) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_FULL_STOP;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'FULL STOP' Pressed" << endl;
+	}
+	if ((key == 46) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_FULL_STOP;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'FULL STOP' Released" << endl;
+	}
+	if ((key == 47) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_FOWARD_SLASH;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'FORWARD SLASH' Pressed" << endl;
+	}
+	if ((key == 47) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_FOWARD_SLASH;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'FORWARD SLASH' Released" << endl;
+	}
+	/*if ((key == 92) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_BACK_SLASH;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'BACK SLASH' Pressed" << endl;
+	}
+	if ((key == 92) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_BACK_SLASH;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'BACK SLASH' Released" << endl;
+	}*/
+	if ((key == 59) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_SEMICOLON;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'SEMICOLON' Pressed" << endl;
+	}
+	if ((key == 59) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_SEMICOLON;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'SEMICOLON' Released" << endl;
+	}
+	if ((key == 61) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_EQUALS;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'EQUALS' Pressed" << endl;
+	}
+	if ((key == 61) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_EQUALS;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'EQUALS' Released" << endl;
+	}
+	if ((key == 91) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_LEFT_BRACKET;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'LEFT BRACKET' Pressed" << endl;
+	}
+	if ((key == 91) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_LEFT_BRACKET;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'LEFT BRACKET' Released" << endl;
+	}
+	if ((key == 93) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_RIGHT_BRACKET;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'RIGHT BRACKET' Pressed" << endl;
+	}
+	if ((key == 93) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_RIGHT_BRACKET;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'RIGHT BRACKET' Released" << endl;
+	}
+	if ((key == 96) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_GRAVE_ACCENT;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'GRAVE ACCENT' Pressed" << endl;
+	}
+	if ((key == 96) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_GRAVE_ACCENT;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'GRAVE ACCENT' Released" << endl;
+	}
+	if ((key == 258) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_TAB;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'TAB' Pressed" << endl;
+	}
+	if ((key == 258) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_TAB;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'TAB' Released" << endl;
+	}
+	if ((key == 260) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_INSERT;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'INSERT' Pressed" << endl;
+	}
+	if ((key == 260) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_INSERT;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'INSERT' Released" << endl;
+	}
+	if ((key == 261) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_DELETE;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'DELETE' Pressed" << endl;
+	}
+	if ((key == 261) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_DELETE;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'DELETE' Released" << endl;
+	}
+	if ((key == 266) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_PAGE_UP;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'PAGE UP' Pressed" << endl;
+	}
+	if ((key == 266) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_PAGE_UP;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'PAGE UP' Released" << endl;
+	}if ((key == 267) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_PAGE_DOWN;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'PAGE DOWN' Pressed" << endl;
+	}
+	if ((key == 267) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_PAGE_DOWN;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'PAGE DOWN' Released" << endl;
+	}
+	if ((key == 268) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_HOME;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'HOME' Pressed" << endl;
+	}
+	if ((key == 268) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_HOME;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'HOME' Released" << endl;
+	}
+	if ((key == 269) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_END;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'END' Pressed" << endl;
+	}
+	if ((key == 269) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_END;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'END' Released" << endl;
+	}
+	if ((key == 280) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_CAPS_LOCK;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'CAPS LOCK' Pressed" << endl;
+	}
+	if ((key == 280) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_CAPS_LOCK;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'CAPS LOCK' Released" << endl;
+	}
+	if ((key == 281) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_SCROLL_LOCK;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'SCROLL LOCK' Pressed" << endl;
+	}
+	if ((key == 281) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_SCROLL_LOCK;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'SCROLL LOCK' Released" << endl;
+	}
+	if ((key == 282) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_NUM_LOCK;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'NUM LOCK' Pressed" << endl;
+	}
+	if ((key == 282) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_NUM_LOCK;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'NUM LOCK' Released" << endl;
+	}
+	if ((key == 283) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_PRINT_SCREEN;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'PRINT SCREEN' Pressed" << endl;
+	}
+	if ((key == 283) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_PRINT_SCREEN;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'PRINT SCREEN' Released" << endl;
+	}
+	if ((key == 284) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_PAUSE;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'PAUSE' Pressed" << endl;
+	}
+	if ((key == 284) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_PAUSE;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'PAUSE' Released" << endl;
+	}
+	if ((key == 290) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_F1;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'F1' Pressed" << endl;
+	}
+	if ((key == 290) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_F1;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'F1' Released" << endl;
+	}
+	if ((key == 291) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_F2;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'F2' Pressed" << endl;
+	}
+	if ((key == 291) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_F2;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'F2' Released" << endl;
+	}
+	if ((key == 292) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_F3;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'F3' Pressed" << endl;
+	}
+	if ((key == 292) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_F3;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'F3' Released" << endl;
+	}
+	if ((key == 293) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_F4;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'F4' Pressed" << endl;
+	}
+	if ((key == 293) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_F4;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'F4' Released" << endl;
+	}
+	if ((key == 294) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_F5;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'F5' Pressed" << endl;
+	}
+	if ((key == 294) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_F5;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'F5' Released" << endl;
+	}
+	if ((key == 295) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_F6;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'F6' Pressed" << endl;
+	}
+	if ((key == 295) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_F6;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'F6' Released" << endl;
+	}
+	if ((key == 296) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_F7;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'F7' Pressed" << endl;
+	}
+	if ((key == 296) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_F7;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'F7' Released" << endl;
+	}
+	if ((key == 297) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_F8;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'F8' Pressed" << endl;
+	}
+	if ((key == 297) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_F8;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'F8' Released" << endl;
+	}
+	if ((key == 298) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_F9;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'F9' Pressed" << endl;
+	}
+	if ((key == 298) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_F9;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'F9' Released" << endl;
+	}
+	if ((key == 299) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_F10;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'F10' Pressed" << endl;
+	}
+	if ((key == 299) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_F10;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'F10' Released" << endl;
+	}
+	if ((key == 300) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_F11;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'F11' Pressed" << endl;
+	}
+	if ((key == 300) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_F11;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'F11' Released" << endl;
+	}
+	if ((key == 301) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_F12;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'F12' Pressed" << endl;
+	}
+	if ((key == 301) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_F12;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'F12' Released" << endl;
+	}
+	if ((key == 320) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_0;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'KEY PAD 0' Pressed" << endl;
+	}
+	if ((key == 320) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_0;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'KEY PAD 0' Released" << endl;
+	}
+	if ((key == 321) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_1;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'KEY PAD 1' Pressed" << endl;
+	}
+	if ((key == 321) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_1;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'KEY PAD 1' Released" << endl;
+	}
+	if ((key == 322) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_2;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'KEY PAD 2' Pressed" << endl;
+	}
+	if ((key == 322) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_2;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'KEY PAD 2' Released" << endl;
+	}
+	if ((key == 323) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_3;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'KEY PAD 3' Pressed" << endl;
+	}
+	if ((key == 323) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_3;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'KEY PAD 3' Released" << endl;
+	}
+	if ((key == 324) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_4;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'KEY PAD 4' Pressed" << endl;
+	}
+	if ((key == 324) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_4;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'KEY PAD 4' Released" << endl;
+	}
+	if ((key == 325) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_5;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'KEY PAD 5' Pressed" << endl;
+	}
+	if ((key == 325) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_5;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'KEY PAD 5' Released" << endl;
+	}
+	if ((key == 326) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_6;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'KEY PAD 6' Pressed" << endl;
+	}
+	if ((key == 326) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_6;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'KEY PAD 6' Released" << endl;
+	}
+	if ((key == 327) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_7;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'KEY PAD 7' Pressed" << endl;
+	}
+	if ((key == 327) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_7;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'KEY PAD 7' Released" << endl;
+	}
+	if ((key == 328) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_8;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'KEY PAD 8' Pressed" << endl;
+	}
+	if ((key == 328) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_8;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'KEY PAD 8' Released" << endl;
+	}
+	if ((key == 329) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_9;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'KEY PAD 9' Pressed" << endl;
+	}
+	if ((key == 329) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_9;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'KEY PAD 9' Released" << endl;
+	}
+	if ((key == 330) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_DECIMAL;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'KEY PAD DECIMAL' Pressed" << endl;
+	}
+	if ((key == 330) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_DECIMAL;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'KEY PAD DECIMAL' Released" << endl;
+	}
+	if ((key == 331) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_DIVIDE;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'KEY PAD DIVIDE' Pressed" << endl;
+	}
+	if ((key == 331) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_DIVIDE;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'KEY PAD DIVIDE' Released" << endl;
+	}
+	if ((key == 332) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_MULTIPLY;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'KEY PAD MULTIPLY' Pressed" << endl;
+	}
+	if ((key == 332) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_MULTIPLY;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'KEY PAD MULTIPLY' Released" << endl;
+	}
+	if ((key == 333) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_SUBTRACT;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'KEY PAD SUBTRACT' Pressed" << endl;
+	}
+	if ((key == 333) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_SUBTRACT;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'KEY PAD SUBTRACT' Released" << endl;
+	}
+	if ((key == 334) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_ADD;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'KEY PAD ADD' Pressed" << endl;
+	}
+	if ((key == 334) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_KP_ADD;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'KEY PAD ADD' Released" << endl;
+	}
 }
