@@ -7,7 +7,7 @@
 - Audio Buffer Object
 - Resource Manager (High Priority) - Jake has started
 - Scene Object (High Priority) - Started
-- Input Manager (High Priority) - Started
+- **Input Manager (High Priority) - Finished as far as I can see.**
 - Scene Manager (High Priority) - Started
 - Render System (Basic Rendering High Priority) - Started
 
