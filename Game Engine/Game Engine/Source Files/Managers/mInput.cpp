@@ -932,18 +932,30 @@ void mInput::KeyCallback(GLFWwindow * window, int key, int scanCode, int action,
 		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
 		cout << "Key 'FORWARD SLASH' Released" << endl;
 	}
-	/*if ((key == 92) && action == GLFW_PRESS)
+	if ((key == 162) && action == GLFW_PRESS)
 	{
 		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_BACK_SLASH;
 		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
 		cout << "Key 'BACK SLASH' Pressed" << endl;
 	}
-	if ((key == 92) && action == GLFW_RELEASE)
+	if ((key == 162) && action == GLFW_RELEASE)
 	{
 		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_BACK_SLASH;
 		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
 		cout << "Key 'BACK SLASH' Released" << endl;
-	}*/
+	}
+	if ((key == 92) && action == GLFW_PRESS)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_HASH;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_DOWN;
+		cout << "Key 'HASH' Pressed" << endl;
+	}
+	if ((key == 92) && action == GLFW_RELEASE)
+	{
+		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_HASH;
+		keyboardButtonState = KEYBOARD_BUTTON_STATE::KEY_UP;
+		cout << "Key 'HASH' Released" << endl;
+	}
 	if ((key == 59) && action == GLFW_PRESS)
 	{
 		pressedKeyboardButton = KEYBOARD_BUTTONS::KEY_SEMICOLON;
